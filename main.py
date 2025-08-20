@@ -9,7 +9,7 @@ def parser_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--year", type=int, required=True)
     parser.add_argument("--max-pages", type=int, default=50)
-    parser.add_argument("--chunk-size", type=int, default=50, help="Chunk size in megabytes")
+    parser.add_argument("--chunk-size", type=int, default=1, help="Chunk size in megabytes")
     return parser.parse_args()
 
 
