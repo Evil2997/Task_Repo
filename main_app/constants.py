@@ -10,6 +10,7 @@ BASE_LIST_URL = "https://dsa.court.gov.ua/dsa/inshe/oddata/532/?page={page}"
 header = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) PythonDownloader/1.0 (+requests)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "uk,ru;q=0.9,en;q=0.8",
 }
 
 rename_map = {
@@ -31,6 +32,7 @@ rename_map = {
 
 reg__1 = re.compile(r"^(\d{2})\.(\d{2})\.(\d{4})$")
 reg__2 = re.compile(r"^\s*([^:]+):\s*(.+?)\s*$")
+DATE_RE = re.compile(r'(\d{2}\.\d{2}\.\d{4})')
 
 data_base__1 = """
     CREATE TABLE IF NOT EXISTS cases (

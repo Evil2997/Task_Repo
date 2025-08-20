@@ -1,4 +1,3 @@
-# importer_one_csv.py
 from __future__ import annotations
 from pathlib import Path
 import re
@@ -7,7 +6,15 @@ import pandas as pd
 
 from typing import Optional, Iterable, Tuple, Dict
 
-from main_app.constants import PREFERRED_ENCODINGS, reg__2, reg__1, data_base__2, data_base__3, data_base__4, rename_map
+from main_app.constants import (
+    PREFERRED_ENCODINGS,
+    reg__1,
+    reg__2,
+    data_base__2,
+    data_base__3,
+    data_base__4,
+    rename_map,
+)
 from main_app.db import init_db, get_conn
 
 
