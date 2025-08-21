@@ -5,7 +5,7 @@ import sqlite3
 import pandas as pd
 
 from main_app.constants import PREFERRED_ENCODINGS
-from main_app.importer_one_csv import sv
+from main_app.import_csv_to_db import sv
 
 
 def export_cases_by_numbers(
